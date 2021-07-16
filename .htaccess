@@ -1,3 +1,16 @@
 ErrorDocument 404 /404.html
 RewriteBase /
 RewriteRule (.*)\.html$ $1 [R=301,L]
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType application/javascript "access plus 5 days"
+ExpiresByType text/javascript "access plus 5 days"
+ExpiresByType text/css "access plus 5 days"
+ExpiresByType image/gif "access plus 5 days"
+ExpiresByType image/jpeg "access plus 5 days"
+ExpiresByType image/png "access plus 5 days"
+</IfModule>
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !your\.domain\.here [NC]
+RewriteCond %{REQUEST_FILENAME} \.(css|js) [NC]
+RewriteRule .* - [L,F]
