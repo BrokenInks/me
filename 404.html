@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/ico" sizes="32x32" href="https://zippw.github.io/me/img/favicon.ico">
+    <link rel="icon" type="image/ico" sizes="16x16" href="https://zippw.github.io/me/img/favicon.ico">
+    <link rel="shortcut icon" href="https://zippw.github.io/me/img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница не найдена</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://zippw.github.io/me/css/style.css">
+    <link rel="stylesheet" href="https://zippw.github.io/me/css/list.css">
+    <link rel="stylesheet" media="all" href="https://zippw.github.io/me/css/animate.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+
+    <div class="preloader">
+        <div class="gooey">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- top-line -->
+    <section class="top-line h" id="top-line">
+        <div class=" container-fluid">
+            <div class="row">
+                <div class="col-md-12" style="padding-right: 0">
+                    <div id="hide" class="logo" alt="">
+                        <a itemprop="url" tabindex="0" href="https://zippw.github.io/me/" alt="DISCORD"
+                            title="На главную"><img itemprop="logo" src="https://zippw.github.io/me/img/logo.svg"></a>
+                    </div>
+                    <div class="menu-head hidden-sm hidden-xs">
+                        <nav id="top-menu" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+                            <ul id="hide">
+                                <li itemprop="name"><a itemprop="url" tabindex="0"
+                                        href="https://zippw.github.io/me/portfolio"><i class="fas fa-user"></i>
+                                        Портфолио</a></li>
+                                <li itemprop="name">
+                                    <a itemprop="url" tabindex="0" class="hoverable"
+                                        href="https://zippw.github.io/me/team">
+                                        <i class="fas fa-handshake"></i> Лучшие
+                                    </a>
+                                </li>
+                                <li itemprop="name"><a itemprop="url" tabindex="0"
+                                        href="https://www.donationalerts.com/r/zippwitch"><i class="fas fa-coffee"></i>
+                                        Донат</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div id="hamburger" class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="https://zippw.github.io/me/"><i class="fas fa-home"> </i>
+                                Главная</a></li>
+                        <li><a class="menu__item" href="https://zippw.github.io/me/portfolio"><i
+                                    class="fas fa-user"></i>
+                                </i> Портфолио</a>
+                        <li><a class="menu__item" href="https://zippw.github.io/team"><i class="fas fa-handshake"> </i>
+                                Лучшие</a></li>
+                        </li>
+                        <li><a class="menu__item" href="https://www.donationalerts.com/r/zippwitch"><i
+                                    class="fas fa-coffee"> </i> Донат</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- bg effects -->
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div id="progress_line"></div>
+
+    <!-- content -->
+    <script>
+        console.clear()
+        let keyCode = [38, 40, 38, 40, 32, 37, 39, 37, 39];
+        console.warn('Код пасхалки:');
+        console.warn(keyCode.join(', '));
+    </script>
+    <script>
+        var keyLog = [];
+        document.body.onkeydown = function (e) {
+            const k = e.keyCode || e.which;
+            keyLog.push(k);
+            console.clear();
+            console.error(keyCode.join(', '));
+            console.warn(keyLog.join(', '));
+            if (keyLog.toString() == keyCode) {
+                window.location.href = "https://zippw.github.io/me/game3000";
+            }
+        };
+    </script>
+    <section id="error">
+        <div class="hit-the-floor">Упс...</div>
+        <div class="container">
+            <div class="col">
+                <div class="col-md-11 errorPage" style="margin: 75px auto auto auto;padding-left: 20px !important;">
+                    <h1>Возможно вы потерялись <img style=" height: 30px"
+                            src="https://cdn.discordapp.com/emojis/838108460067061790.gif?v=1"></h1>
+                    <h3>Страница не найдена</h3>
+                    <p> Вернуться на
+                        <a class="fas fa-home" href="https://zippw.github.io/me/">
+                            <b>главную</b>
+                        </a>
+                    </p>
+                    <p> Популярные страницы: <br>
+                    <ul>
+                        <li>
+                            <a href="https://zippw.github.io/me/portfolio">
+                                <b>Портфолио <img style="height: 15px; margin-bottom: 5px; color: #fff"
+                                        src="img/icons/external-link-symbol.svg"></b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://zippw.github.io/me/team">
+                                <b>Лучшие <img style="height: 15px; margin-bottom: 5px; color: #fff"
+                                        src="img/icons/external-link-symbol.svg"></b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.donationalerts.com/r/zippwitch">
+                                <b>Донат <img style="height: 15px; margin-bottom: 5px; color: #fff"
+                                        src="img/icons/external-link-symbol.svg"></b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://zippw.github.io/me/about-me">
+                                <b>О ZippWitch <img style="height: 15px; margin-bottom: 5px; color: #fff"
+                                        src="img/icons/external-link-symbol.svg"></b>
+                            </a>
+                        </li>
+                    </ul>
+
+                    Если какая либо ссылка не работает, <br> Напишите мне: <a
+                        href="mailto:zippwickness@gmail.com">zippwickness@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- libraries local -->
+    <!-- <script src="./js/lib/TweenMax.min.js"></script> -->
+
+    <!-- libraries public -->
+    <script src='./js/lib/console.min.js'></script>
+    <script>
+        console.image("https://tenor.com/view/cat-gif-18393029");
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
+
+    <!-- stock -->
+    <script src="https://zippw.github.io/me/js/scroll-progress.js"></script>
+
+</body>
+
+</html>
