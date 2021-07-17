@@ -1,0 +1,32 @@
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+#progress_line {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 3px;
+    height: 0%;
+    background: #7f78bd9f;
+    background: -moz-linear-gradient(top, #7f78bd 10%, #788abd 30%, #78a7bd 50%, #7abd78 70%, #bcbd78 80%, #bd9978 90%, #bd7878 100%);
+    background: -webkit-linear-gradient(top, #7f78bd 10%, #788abd 30%, #78a7bd 50%, #7abd78 70%, #bcbd78 80%, #bd9978 90%, #bd7878 100%);
+}
+
+body {
+    background: url(../img/bg.png) repeat;
+    /* background-color: #202230; */
+    background-color: #100e17;
+    background-attachment: fixed;
+    align-items: center;
+    display: flex;
+    cursor: default;
+    font-family: sans-serif;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Montserrat Bold', sans-serif;
+    width: 100%;
+    height: 100%;
+    padding: 70px 0px 0px 0px;
+}
