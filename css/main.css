@@ -1,8 +1,17 @@
-* {
-    padding: 0;
-    margin: 0;
-    background: #333366;
-    font-family: sans-serif;
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+#progress_line {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 3px;
+    height: 0%;
+    background: #7f78bd9f;
+    background: -moz-linear-gradient(top, #7f78bd 10%, #788abd 30%, #78a7bd 50%, #7abd78 70%, #bcbd78 80%, #bd9978 90%, #bd7878 100%);
+    background: -webkit-linear-gradient(top, #7f78bd 10%, #788abd 30%, #78a7bd 50%, #7abd78 70%, #bcbd78 80%, #bd9978 90%, #bd7878 100%);
 }
 
 #sidebar {
@@ -59,9 +68,21 @@
 #sidebar .toggle-btn:hover span {background: #339966}
 
 #sidebar .toggle-btn span {
-    display: block;
+    display: table-row-group;
     width: 25px;
     height: 4px;
     background: #666;
     margin: 4px 0;
 }
+
+#error .hit-the-floor {
+    position: absolute;
+    left: 500px;
+    top: 50px;
+    background: #33ff33;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#sidebar .hit-the-floor:hover {background: #556270}
