@@ -3,6 +3,10 @@
     background: transparent;
 }
 
+body {
+    text-align: center
+ }
+
 #progress_line {
     position: fixed;
     right: 0;
@@ -68,7 +72,7 @@
 #sidebar .toggle-btn:hover span {background: #339966}
 
 #sidebar .toggle-btn span {
-    display: table-row-group;
+    display: block;
     width: 25px;
     height: 4px;
     background: #666;
