@@ -79,14 +79,6 @@ body {
     margin: 4px 0;
 }
 
-#error .hit-the-floor {
-    position: absolute;
-    left: 500px;
-    top: 50px;
-    background: #33ff33;
-    padding: 10px;
-    border-radius: 12px;
-    cursor: pointer;
-}
+
 
 #sidebar .hit-the-floor:hover {background: #556270}

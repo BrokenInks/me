@@ -1,18 +1,4 @@
-::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
-}
 
-#progress_line {
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 3px;
-    height: 0%;
-    background: #7f78bd9f;
-    background: -moz-linear-gradient(top, #7f78bd 10%, #788abd 30%, #78a7bd 50%, #7abd78 70%, #bcbd78 80%, #bd9978 90%, #bd7878 100%);
-    background: -webkit-linear-gradient(top, #7f78bd 10%, #788abd 30%, #78a7bd 50%, #7abd78 70%, #bcbd78 80%, #bd9978 90%, #bd7878 100%);
-}
 
 body {
     background: url(../img/bg.png) repeat;
@@ -20,6 +6,7 @@ body {
     background-color: #100e17;
     background-attachment: fixed;
     align-items: center;
+
     font-family: sans-serif;
     justify-content: center;
     margin: 0;
@@ -512,7 +499,7 @@ img {
 }
 
 input[type="text"] {
-    border: 0.7px solid #7f78bd;
+    border: 0.7px solid #1e128b;
     cursor: text;
     color: #322a63a4;
 }
