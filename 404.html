@@ -11,8 +11,9 @@
     <title>Страница не найдена</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/list.css">
+
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
@@ -22,21 +23,14 @@
 <body>
 
     <script>
-        window.onload = function () {
-            document.body.classList.add('loaded_hiding');
-            window.setTimeout(function () {
-                document.body.classList.add('loaded');
-                document.body.classList.remove('loaded_hiding');
-            }, 500);
-        }
+        window.onload = function () { document.body.classList.add("loaded_hiding"), window.setTimeout(function () { document.body.classList.add("loaded"), document.body.classList.remove("loaded_hiding") }, 500) };
     </script>
 
     <div class="preloader">
+        <img class="gooey__img" src="./img/preloaderLogo.png">
         <div class="gooey">
             <span class="dot"></span>
             <div class="dots">
-                <span></span>
-                <span></span>
                 <span></span>
             </div>
         </div>
@@ -61,7 +55,12 @@
     </div>
     <div id="progress_line"></div>
 
-
+    <!-- content -->
+    <script>
+        console.clear(); let keyCode = [38, 40, 38, 40, 32, 37, 39, 37, 39]; console.warn("Код пасхалки:"), console.warn(keyCode.join(", "));
+    </script>
+    <script>
+        var keyLog = []; document.body.onkeydown = function (o) { const e = o.keyCode || o.which; keyLog.push(e), console.clear(), console.error(keyCode.join(", ")), console.warn(keyLog.join(", ")), keyLog.toString() == keyCode && (window.location.href = "https://zippw.github.io/me/game3000") };
     </script>
     <section id="error">
         <div class="hit-the-floor">Упс...</div>
@@ -86,16 +85,16 @@
                         </li>
                         <li>
                             <a href="https://brokeninks.github.io/me/pronas">
-                                <b>Про Нас <img style="height: 15px; margin-bottom: 5px; color: #fff"
+                                <b>Про нас <img style="height: 15px; margin-bottom: 5px; color: #fff"
                                         src="img/icons/external-link-symbol.svg"></b>
                             </a>
                         </li>
                     </ul>
 
                     Если какая либо ссылка не работает, <br> Напишите мне: <a
-                        href="mailto:supkvinlinepe@gmail.com">supkvinlinepe@gmail.com</a><
-                            <a href="https://zippw.github.io/me">
-                                <h6>Автор стилей</h6>
+                        href="mailto:supkvinlinepe@gmail.com">supkvinlinepe@gmail.com</a>
+                        <a href="https://zippw.github.io/me">
+                            <h6>Автор стилей</h6>
                     </p>
                 </div>
             </div>
