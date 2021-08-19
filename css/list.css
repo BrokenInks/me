@@ -28,10 +28,10 @@ a {
     background-color: transparent;
 }
 
-img {
+/* img {
     vertical-align: middle;
     border-style: none;
-}
+} */
 
 svg {
     overflow: hidden;
@@ -365,6 +365,75 @@ hr {
     margin-bottom: .75rem;
 }
 
+.portfolio__card .itemImg {
+    transition: .3s;
+    border-radius: 20%;
+    border: 2px solid #fff;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    background-color: rgb(33 37 41);
+}
+
+/* @media (max-width:735px) {
+    .portfolio__card__m {
+        min-width: 100%
+    }
+    .card__portfolio {
+        margin: 20px 0px 7px!important;
+        border-radius: 0 10px 10px 10px!important;
+        height: 200px!important;
+    }
+    .portfolio__card-title {
+        left: 50%
+    }
+    .portfolio__card .itemImg {
+        left: 0;
+        height: 70px;
+        width: 70px;
+        margin-top: 0px
+    }
+    .portfolio__card-num {
+        padding-top: 3px;
+        height: 25px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        font-size: 15px;
+        width: 25px;
+        border-radius: 0 0 15px 0px;
+        border: none;
+        color: #FFF;
+        z-index: 0;
+    }
+    .sparkle-1qyWC9 {
+        display: none
+    }
+    .status-badge {
+        margin-top: 0!important;
+    }
+    .btn-group-portfolio__card {
+        top: 160px;
+        height: 30px;
+        font-size: 1px!important;
+    }
+    .btn-main {
+        padding-top: 2px!important;
+        font-size: 1px;
+        font-size: 15px!important;
+        border-radius: 0px 5px 5px 0!important
+    }
+    .btn-l {
+        padding-top: 2px!important;
+        font-size: 15px!important;
+        border-radius: 5px 0px 0px 5px!important
+    }
+    .badge {
+        padding: .45em .4em!important;
+        font-size: 60%!important;
+        border-radius: .25rem;
+    }
+} */
+
 .badge {
     display: inline-block;
     padding: .25em .4em;
@@ -625,7 +694,7 @@ hr {
 
 .portfolio__card:hover #portfolio__card-icon {
     transition: .3s;
-    transform: translateY(-20px) scale(0.8)
+    transform: translateY(-20px) scale(0.82)
 }
 
 .portfolio__card-text-sim {
@@ -645,9 +714,9 @@ hr {
 
 .portfolio__card:hover {
     transition: all 0.3s ease;
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
 }
 
 #portfolio__card-hide {
