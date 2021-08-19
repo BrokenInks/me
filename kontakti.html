@@ -5,20 +5,61 @@
         <meta name="viewport" content="width=device-width,
         initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
-        <title>Главная Страница</title>
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+        <link rel="manifest" href="img/favicons/site.webmanifest">
+        <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#7F78BD">
+        <meta name="msapplication-TileColor" content="#7f78bd">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Главная</title>
     
          <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="css/ttt.css">
+    <link rel="stylesheet" href="css/page.css">
+
+    <!-- link preview -->
+    <meta name="theme-color" content="#7f78bd">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Сам не знаю что это">
+    <meta property="og:url" content="https://brokeninks.github.io/kontakti">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="img/bg.png">
+    <meta property="og:site_name" content="Связь с Администрацией">
+    <meta property="og:title" content="Ненаю Ненаю">
+
     </head>
 
+<body>
+    <script>
+        window.onload = function () { document.body.classList.add("loaded_hiding"), window.setTimeout(function () { document.body.classList.add("loaded"), document.body.classList.remove("loaded_hiding") }, 500) };
+    </script>
+</body>
+
+<div class="preloader">
+    <img class="gooey__img" src="./img/home_button.jpg">
+    <div class="gooey">
+        <span class="dot"></span>
+        <div class="dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</div>
+
     <!-- top-line -->
-    <section class="top-line h" id="top-line">
+    <section class="noselect top-line h" id="top-line">
         <div class=" container-fluid">
             <div class="row">
+                <div class="col-md-12" style="padding-right: 0">
                     <div id="hide" class="logo" alt="">
                         <a itemprop="url" tabindex="0" href="./" alt="DISCORD" title="На главную"><img itemprop="logo"
-                                class="hoverable" src="./img/imps.jpg"></a>
+                                draggable="false" class="hoverable" id="logo" src="./img/home_button.jpg"></a>
                     </div>
 
                     <div class="menu-head hidden-sm hidden-xs">
@@ -34,11 +75,27 @@
                                         <i class="fas fa-handshake"></i> Контакты
                                     </a>
                                 </li>
-                            </ul>
-                        </nav>
+                        </ul>
                     </div>
                 </div>
-            </selection>
+                <div id="hamburger" class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul class="menu__box">
+                        <li><a class=" menu__item" href="./"><i class="fas fa-home"> </i> Главная</a></li>
+                        <li><a class="menu__item" href="./kontakti.html"><i class="fas fa-user"> </i> Контакты</a>
+                        <li><a class="menu__item" href="./pronas"><i class="fas fa-handshake"> </i> Про нас</a></li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
 
     <!-- bg effects -->
     <div class="area">
@@ -55,6 +112,9 @@
             <li></li>
         </ul>
     </div>
+    
+
+    
     <!-- content -->
     <div class="fullpage" id="js-fullpage">
         <div class="section">
@@ -100,7 +160,13 @@
                             transition: .3s;
                         }
                     </style>
-                    <h2 class="js-letter h2-main">|-Связь с администрацией-|</h2>
+                    <h2 class="js-letter h2-main">|-Связь с Администрацией-|</h2>
                     <p style="font-family: 'Montserrat Medium'" class="js-letter paragraph">
 
+                    <h3 class="js-letter h3-main">Discord: BrokenInk#7777</h3>
+                    <p style="font-family: 'Montserrat Medium'" class="js-letter paragraph"></p>
+
+                    <a href="https://vk.com/brokenink">
+                    <h2 class="js-letter h4-main">VK: vk.com/brokenink</h2>
+                    <p style="font-family: 'Montserrat Medium'" class="js-letter paragraph"></p>
     <div id="progress_line"></div>
