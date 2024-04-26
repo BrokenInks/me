@@ -15,54 +15,103 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Главная</title>
     
+         <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="css/ttt.css">
+    <link rel="stylesheet" href="css/page.css">
 
-<head>
     <!-- link preview -->
     <meta name="theme-color" content="#7f78bd">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="🎗️ Абоба 🎗️">
+    <meta property="og:description" content="Сам не знаю что это">
+    <meta property="og:url" content="https://brokeninks.github.io">
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:image" content="https://zippw.github.io/me/img/banner.png">
-    <meta property="og:site_name" content="ЛУЧШИЕ">
-    <meta property="og:url" content="https://zippw.github.io/me/team">
-    <meta property="og:title" content="Моё портфолио">
+    <meta property="og:image" content="img/bg.png">
+    <meta property="og:site_name" content="ГЛАВНАЯ">
+    <meta property="og:title" content="Глава бога">
 
-    <!-- website -->
-    <link rel="icon" type="image/ico" sizes="32x32" href="./img/favicon.ico">
-    <link rel="icon" type="image/ico" sizes="16x16" href="./img/favicon.ico">
-    <link rel="shortcut icon" href="./img/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Лучшие</title>
-
-    <!-- css -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/list.css">
-    <link rel="stylesheet" href="./css/jquery.fullPage.css">
-    <link rel="stylesheet" href="./css/twemoji.min.css">
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
-</head>
-
-
+    </head>
 
 <body>
     <script>
         window.onload = function () { document.body.classList.add("loaded_hiding"), window.setTimeout(function () { document.body.classList.add("loaded"), document.body.classList.remove("loaded_hiding") }, 500) };
     </script>
+</body>
 
-    <div class="preloader">
-        <img class="gooey__img" src="./img/preloaderLogo.png">
-        <div class="gooey">
-            <span class="dot"></span>
-            <div class="dots">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+<div class="preloader">
+    <img class="gooey__img" src="./img/home_button.jpg">
+    <div class="gooey">
+        <span class="dot"></span>
+        <div class="dots">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </div>
-    <div id="notify"></div>
+</div>
 
+    <!-- top-line -->
+    <section class="noselect top-line h" id="top-line">
+        <div class=" container-fluid">
+            <div class="row">
+                <div class="col-md-12" style="padding-right: 0">
+                    <div id="hide" class="logo" alt="">
+                        <a itemprop="url" tabindex="0" href="./" alt="DISCORD" title="На главную"><img itemprop="logo"
+                                draggable="false" class="hoverable" id="logo" src="./img/home_button.jpg"></a>
+                    </div>
+
+                    <div class="menu-head hidden-sm hidden-xs">
+                        <nav itemscope="" itemtype="http://schema.org/SiteNavigationElement"></nav>
+                            <ul id="hide">
+                                <li itemprop="name">
+                                    <a itemprop="url" tabindex="0" class="hoverable" href="./index.html">
+                                        <i class="fas fa-user"></i> Главная
+                                    </a>
+                                </li>
+                                <li itemprop="name">
+                                    <a itemprop="url" tabindex="0" class="hoverable" href="./kontakti.html">
+                                        <i class="fas fa-handshake"></i> Контакты
+                                    </a>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="hamburger" class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul class="menu__box">
+                        <li><a class=" menu__item" href="./"><i class="fas fa-home"> </i> Главная</a></li>
+                        <li><a class="menu__item" href="./kontakti.html"><i class="fas fa-user"> </i> Контакты</a>
+                        <li><a class="menu__item" href="./pronas"><i class="fas fa-handshake"> </i> Про нас</a></li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- bg effects -->
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
     <!-- top-line -->
     <section class="top-line h" id="top-line">
         <div class=" container-fluid">
