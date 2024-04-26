@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- link preview -->
+    <meta name="theme-color" content="#7f78bd">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="🎗️ Абоба 🎗️">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="https://zippw.github.io/me/img/banner.png">
+    <meta property="og:site_name" content="ЛУЧШИЕ">
+    <meta property="og:url" content="https://zippw.github.io/me/team">
+    <meta property="og:title" content="Моё портфолио">
+
+    <!-- website -->
+    <link rel="icon" type="image/ico" sizes="32x32" href="./img/favicon.ico">
+    <link rel="icon" type="image/ico" sizes="16x16" href="./img/favicon.ico">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лучшие</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/list.css">
+    <link rel="stylesheet" href="./css/jquery.fullPage.css">
+    <link rel="stylesheet" href="./css/twemoji.min.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <script>
+        window.onload = function () { document.body.classList.add("loaded_hiding"), window.setTimeout(function () { document.body.classList.add("loaded"), document.body.classList.remove("loaded_hiding") }, 500) };
+    </script>
+
+    <div class="preloader">
+        <img class="gooey__img" src="./img/preloaderLogo.png">
+        <div class="gooey">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div id="notify"></div>
+
+    <!-- top-line -->
+    <section class="top-line h" id="top-line">
+        <div class=" container-fluid">
+            <div class="row">
+                <div class="col-md-12" style="padding-right: 0">
+                    <div id="hide" class="logo" alt="">
+                        <a itemprop="url" tabindex="0" href="./" alt="DISCORD" title="На главную"><img itemprop="logo"
+                                class="hoverable" src="./img/logo.svg"></a>
+                    </div>
+
+                    <div class="menu-head hidden-sm hidden-xs">
+                        <nav id="top-menu" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+                            <ul id="hide">
+                                <li itemprop="name">
+                                    <a itemprop="url" tabindex="0" class="hoverable" href="./portfolio">
+                                        <i class="fas fa-user"></i> Портфолио
+                                    </a>
+                                </li>
+                                </li>
+                                <li itemprop="name">
+                                    <a itemprop="url" tabindex="0" class="hoverable" href="./team">
+                                        <i class="fas fa-handshake"></i> Лучшие
+                                    </a>
+                                </li>
+                                <li itemprop="name">
+                                    <a itemprop="url" tabindex="0" class="hoverable"
+                                        href="https://www.donationalerts.com/r/zippwitch">
+                                        <i class="fas fa-coffee"></i> Донат
+                                    </a>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div id="hamburger" class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="./"><i class="fas fa-home"> </i> Главная</a></li>
+                        <li><a class="menu__item" href="./portfolio"><i class="fas fa-user"> </i> Портфолио</a></li>
+                        <li><a class="menu__item" href="./team"><i class="fas fa-handshake"> </i> Лучшие</a></li>
+                        <li><a class="menu__item" href="https://www.donationalerts.com/r/zippwitch"><i
+                                    class="fas fa-coffee"> </i> Донат</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- bg effects -->
+    <div style="  position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;" class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div id="progress_line"></div>
+
+    <!-- content -->
+    <main class="h">
+
+        <h1 style="text-align: center;">Лучшие</h1>
+        <h3 style="font-family: 'Montserrat Light', sans-serif; text-align: center; color: rgb(228, 228, 228)">Друзья,
+            сотрудники проекта
+            <br> и поддерживающие <img src="./img/icons/emojis/moloric.gif" alt=":moloric:" title=":moloric:">
+        </h3>
+        <section>
+            <div class="container">
+                <div class="row2">
+                    <div class="col-md-12" id="table">
+                        <table class="table serversList">
+
+                            <script src="./js/lib/esm/index.js"></script>
+                            <div class="row2" id="all-bots">
+                                <script src="js/loop1.js"></script>
+                            </div>
+                            <script>
+                                function copyLink(e) { let t = e.target.dataset.link, o = document.createElement("INPUT"); o.value = t, document.body.appendChild(o), o.select(), console.log(o.value), document.execCommand("copy"), document.body.removeChild(o), Notify({ title: "Ссылка скопирована!", position: "bottom center", type: "success" }) }
+                            </script>
+
+
+                        </table>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <!-- libraries local -->
+
+    <script src="./js/lib/jquery.min.js"></script>
+    <script src="./js/lib/TweenMax.min.js"></script>
+    <script src="./js/lib/anime.min.js"></script>
+    <script src="./js/lib/barba.min.js"></script>
+    <script src="./js/lib/wow.min.js"></script>
+    <!-- libraries  public -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script> -->
+
+    <!-- stock -->
+
+</body>
+
+
+</html>
